@@ -1,0 +1,96 @@
+Traceback (most recent call last):
+  File "AMMISOFT.pyw", line 483, in <module>
+  File "AMMISOFT.pyw", line 39, in __init__
+  File "AMMISOFT.pyw", line 28, in imtolab
+  File "PIL\Image.pyc", line 2280, in open
+IOError: [Errno 2] No such file or directory: 'termsconditions.jpg'
+Traceback (most recent call last):
+  File "AMMISOFT.pyw", line 483, in <module>
+  File "AMMISOFT.pyw", line 39, in __init__
+  File "AMMISOFT.pyw", line 28, in imtolab
+  File "PIL\Image.pyc", line 2280, in open
+IOError: [Errno 2] No such file or directory: 'termsconditions.jpg'
+Traceback (most recent call last):
+  File "AMMISOFT.pyw", line 7, in <module>
+  File "FileDialog.pyc", line 11, in <module>
+  File "Tkinter.pyc", line 38, in <module>
+  File "FixTk.pyc", line 68, in <module>
+  File "_tkinter.pyc", line 12, in <module>
+  File "_tkinter.pyc", line 10, in __load
+ImportError: DLL load failed: The specified module could not be found.
+Traceback (most recent call last):
+  File "AMMISOFT.pyw", line 10, in <module>
+  File "matplotlib\__init__.pyc", line 122, in <module>
+  File "matplotlib\cbook.pyc", line 33, in <module>
+  File "numpy\__init__.pyc", line 142, in <module>
+  File "numpy\add_newdocs.pyc", line 13, in <module>
+  File "numpy\lib\__init__.pyc", line 18, in <module>
+  File "numpy\lib\polynomial.pyc", line 20, in <module>
+  File "numpy\linalg\__init__.pyc", line 51, in <module>
+  File "numpy\linalg\linalg.pyc", line 29, in <module>
+  File "numpy\linalg\lapack_lite.pyc", line 12, in <module>
+  File "numpy\linalg\lapack_lite.pyc", line 10, in __load
+ImportError: DLL load failed: The specified module could not be found.
+Traceback (most recent call last):
+  File "AMMISOFT.pyw", line 10, in <module>
+  File "matplotlib\__init__.pyc", line 122, in <module>
+  File "matplotlib\cbook.pyc", line 33, in <module>
+  File "numpy\__init__.pyc", line 142, in <module>
+  File "numpy\add_newdocs.pyc", line 13, in <module>
+  File "numpy\lib\__init__.pyc", line 8, in <module>
+  File "numpy\lib\type_check.pyc", line 11, in <module>
+  File "numpy\core\__init__.pyc", line 24, in <module>
+ImportError: 
+Importing the multiarray numpy extension module failed.  Most
+likely you are trying to import a failed build of numpy.
+If you're working with a numpy git repo, try `git clean -xdf` (removes all
+files not under version control).  Otherwise reinstall numpy.
+
+Traceback (most recent call last):
+  File "AMMISOFT.pyw", line 10, in <module>
+  File "matplotlib\__init__.pyc", line 122, in <module>
+  File "matplotlib\cbook.pyc", line 33, in <module>
+  File "numpy\__init__.pyc", line 166, in <module>
+  File "numpy\random\__init__.pyc", line 99, in <module>
+  File "numpy\random\mtrand.pyc", line 12, in <module>
+  File "numpy\random\mtrand.pyc", line 10, in __load
+ImportError: DLL load failed: The specified module could not be found.
+Traceback (most recent call last):
+  File "AMMISOFT.pyw", line 13, in <module>
+  File "PIL\Image.pyc", line 67, in <module>
+  File "PIL\_imaging.pyc", line 12, in <module>
+  File "PIL\_imaging.pyc", line 10, in __load
+ImportError: DLL load failed: The specified module could not be found.
+Traceback (most recent call last):
+  File "AMMISOFT.pyw", line 10, in <module>
+  File "matplotlib\__init__.pyc", line 122, in <module>
+  File "matplotlib\cbook.pyc", line 33, in <module>
+  File "numpy\__init__.pyc", line 142, in <module>
+  File "numpy\add_newdocs.pyc", line 13, in <module>
+  File "numpy\lib\__init__.pyc", line 8, in <module>
+  File "numpy\lib\type_check.pyc", line 11, in <module>
+  File "numpy\core\__init__.pyc", line 24, in <module>
+ImportError: 
+Importing the multiarray numpy extension module failed.  Most
+likely you are trying to import a failed build of numpy.
+If you're working with a numpy git repo, try `git clean -xdf` (removes all
+files not under version control).  Otherwise reinstall numpy.
+
+Traceback (most recent call last):
+  File "AMMISOFT.pyw", line 483, in <module>
+  File "AMMISOFT.pyw", line 39, in __init__
+  File "AMMISOFT.pyw", line 28, in imtolab
+  File "PIL\Image.pyc", line 2280, in open
+IOError: [Errno 2] No such file or directory: 'termsconditions.jpg'
+Traceback (most recent call last):
+  File "AMMISOFT.pyw", line 483, in <module>
+  File "AMMISOFT.pyw", line 39, in __init__
+  File "AMMISOFT.pyw", line 28, in imtolab
+  File "PIL\Image.pyc", line 2280, in open
+IOError: [Errno 2] No such file or directory: 'termsconditions.jpg'
+Traceback (most recent call last):
+  File "AMMISOFT.pyw", line 483, in <module>
+  File "AMMISOFT.pyw", line 39, in __init__
+  File "AMMISOFT.pyw", line 28, in imtolab
+  File "PIL\Image.pyc", line 2280, in open
+IOError: [Errno 2] No such file or directory: 'termsconditions.jpg'

@@ -1,0 +1,32 @@
+Short Guide for AMMISOFT Data Files:
+
+The first line of a data file contains two items.
+    (1) Columns 1–72, title for the dataset.
+    (2) Columns 77–80, brief name for the dataset.
+
+The second line contains thirteen items.
+    (1) Columns 1–20, name for the data’s measurement and units.
+    (2) Columns 21–25 right justified, scaling integer N, multiplies data by 10**N.
+    (3) Columns 26–30 right justified, number of genotypes.
+    (4) Columns 32–35 left justified, name for genotypes (such as GEN).
+    (5) Columns 36–40 right justified, number of environments.
+    (6) Columns 42–45 left justified, name for environments (such as ENV).
+    (7) Columns 46–50 right justified, number of replications.
+    (8) Columns 52–55 left justified, name for replications (such as REP).
+    (9) Columns 58–60, order of data entries, specified by the first letters of the names
+          from columns 32, 42, and 52; the first changing fastest and the last changing slowest.
+    (10) Columns 62–65 left justified, name for treatments (such as TRT).
+    (11) Columns 68–70 left justified, experimental design (RCB or other such as RAN).
+    (12) Columns 71–75 right justified or with decimal point, missing value indicator.
+    (13) Column 80, if N, no format supplied; if F, format supplied for reading data.
+
+Optional format line if F in column 80 of line 2, the FORTRAN format up to 72 characters.
+
+The data entries, in free format if no format is supplied; in fixed format if format is supplied.
+
+Genotype code names and then environment code names in format 15(A4, 1X),
+with each list starting a new line.
+
+
+
+

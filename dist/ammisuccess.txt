@@ -1,0 +1,6 @@
+Successful AMMI analysis has produced the following four tables,
+and each table is followed with explanatory comments:
+Analysis of Variance (ANOVA) table
+Winners for AMMI model family
+Ranking table for AMMI1 and AMMIF
+Ranked means and IPC1 scores

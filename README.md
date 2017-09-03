@@ -1,10 +1,10 @@
-#AMMISOFT
+# AMMISOFT
 
 ## AMMISOFT setup
 
 1. Run Output\AMMISOFT-installer.exe
 
-***AMMISOFT installer creation***
+## AMMISOFT installer creation
 
 - This will overwrite the previous Output\AMMISOFT-installer if it is not moved or copied
 

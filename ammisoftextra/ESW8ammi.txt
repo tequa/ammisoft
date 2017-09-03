@@ -1,0 +1,305 @@
+AMMISOFT for ESW8:  Data Input
+
+ESWYT 8 bread wheat trial; 1991 TAG 81:27-37.                           
+
+Data input filename:
+C:/Users/DMoran/Documents/AMMISOFT/ESW8.txt                                     
+
+AMMI output filename:
+C:/Users/DMoran/Documents/AMMISOFT/ESW8ammi.txt                                 
+
+Measurement  Yield  tons/ha      
+Number of GEN        18
+Number of ENV        25
+Number of REP         1
+
+Number of TRT  with data       450 out of       450 possible.
+No empty cells.
+
+Required memory is     .0040% of allocated memory.
+
+Grand mean        4.65378
+
+
+AMMISOFT for ESW8:  ANOVA Table
+
+---------------------------------------------------------------
+Source            df               SS                  MS
+---------------------------------------------------------------
+TRT               449            2520.07858             5.61265
+  GEN              17              18.11218             1.06542
+  ENV              24            2369.45747            98.72739
+  GxE             408             132.50893              .32478
+    IPC1           40              35.32092              .88302
+    IPC2           38              18.28304              .48113
+    IPC3           36              15.55975              .43222
+    IPC4           34              14.02258              .41243
+    IPC5           32              11.19057              .34971
+    IPC6           30               9.95385              .33180
+    IPC7           28               7.10486              .25374
+    Residual      170              21.07337              .12396
+---------------------------------------------------------------
+
+MODEL DIAGNOSIS for this dataset cannot consider FR-tests or GxE signal
+because of no replication.  Instead, consider which AMMI model yields a
+practical number of mega-environments, as well as which model parameters
+have an evident biological or ecological interpretation.
+
+
+AMMISOFT for ESW8:  Winners for AMMI Model Family
+
+-----------------------------------------------------------
+              AMMI Model Family
+              ---------------------------------------------
+Genotype          0    1    2    3    4    5    6    7    F
+-----------------------------------------------------------
+    5  KAZ2      25   13    9    9    7    6    4    6    4
+    4  KAZ1                 1    1    5    4    3    1    3
+    7  GENA                                1    4    5    3
+    9  SERI            3    2    1    6    2    1         1
+    6  RWBB                 4    3    1    2    2    3    1
+   10  BUPV                      1                         
+   18  HDHO                                               1
+   16  RGKB                                1    2    1    1
+   17  VEPV                                          1    1
+    8  AGA3                           1    2    2    1    1
+   14  BJYC                                1    1    2    4
+    2  CNPR                      3                        2
+   15  HAPR            9    7    6    5    5    5    4    3
+   11  KETO                 2    1         1    1    1     
+-----------------------------------------------------------
+Mega-environments 1    3    6    8    6   10   10   10   12
+-----------------------------------------------------------
+Another    4 genotypes never win, so they are not listed.
+
+     Mega-environments are distinguished by having different genotype
+winners.  Increasingly complex AMMI models generally have more genotype
+winners or m-es, as shown in the list at the bottom of the above table.
+This is an important reason why model diagnosis matters.
+     Mega-environment analysis has been applied mostly to yield-trial
+data, for which larger values are better.  It is also applicable to 
+other traits, such as disease resistance, but again larger values must
+indicate better genotypes.  For instance, if the original scale is 
+0 for most resistant to 5 for most diseased, then subtract those values
+from 5 in order to obtain a transformed scale with 0 worst and 5 best.
+     In the above table, the genotypes are listed in IPC1 order,
+so those at the top and bottom have opposite GxE interaction patterns.
+Often this contrast in the genotypes has an evident agricultural
+interpretation that has a corresponding contrast in the environments
+(which are listed in their IPC1 order in the following table).
+A genotype at the top of this table has positive GxE interactions with
+environments at the top of the next table and negative GxE interactions
+with environments at the bottom of the next table; and the opposite
+patterns apply to genotypes at the bottom of this table.
+     AMMI models to the left of the best AMMI model (for optimizing
+predictive accuracy) are too simple, so they underfit real signal;
+whereas models to the right of the best one are too complex, so they
+overfit spurious noise.  At the opposite extremes, AMMI0 always captures
+no GE-signal and no GE-noise, whereas AMMIF always captures all GE-signal
+but with this also all GE-noise.  Accordingly, a parsimonious intermediate
+AMMI model is often most predictively accurate, such as AMMI1 or AMMI2,
+because missing little GE-signal while discarding much GE-noise
+is better than either of the opposite and worse problems of missing a
+huge amount of GE-signal or capturing a huge amount of GE-noise.
+This opportunity to increase predictive accuracy is another reason why 
+model diagnosis matters.
+     Practical constraints frequently limit the number of workable m-es 
+to only 2 or 3 (or perhaps a few more).  This can require a lower AMMI
+model than that diagnosed solely by statistical considerations, often
+AMMI1, in order to achieve fewer m-es.  Often this lower AMMI model is
+almost as predictively accurate as the best model, and is also far more
+accurate than AMMIF, that is, the actual data (or averages over reps).
+     The above table displays the genotype winners and the consequent
+numbers of m-es for a wide spectrum of options from AMMI0 to AMMIF.
+Thereby it illuminates the tradeoff between statistical and practical
+considerations when choosing the most appropriate member of the AMMI
+model family to use for a given dataset.
+
+
+AMMISOFT for ESW8:  Ranking Table for AMMI1 and AMMIF
+
+----------------------------------------------------------------------------
+                              AMMI1 Ranks                  AMMIF Ranks
+                      -------------------------    -------------------------
+Environment   Ratio       1    2    3    4    5        1    2    3    4    5
+----------------------------------------------------------------------------
+   25  MM    1.0000       5    4    7    9    6        5    1    4    9   17
+    8  MG    1.0000       5    4    7    9    6        5    4   18   12   15
+   21  TC    1.0000       5    4    7    9    6        9   16    5    7    4
+   18  SC    1.0000       5    4    9    7    6        7    4    5    2   17
+   12  SJ    1.0000       5    4    9    7    6       18    7    6    5   12
+   15  SS    1.0000       5    4    9    7    6        5    9    4    1    7
+    7  IL    1.0000       5    4    9    7    6        6    9   16    4    5
+   22  PA    1.0000       5    4    9    7    6        7    1   10   12    4
+    6  BJ    1.0000       5    4    9    7    6        5    9   11    7   16
+   16  ID    1.0000       5    4    9    7    6       14   18    7    2   16
+    9  MS    1.0000       5    9    4    7    6        4    5   15    2    6
+   19  NB    1.0000       5    9    4    7    6        2    4   16   18    6
+   24  AL    1.0000       5    9    4    7    6        4    7    2    1    6
+
+   17  JM    1.0086       9    5    4   15    6        4   11   13   16    6
+   20  PI    1.0113       9    5   15    4   14        8    7    6    9   10
+    3  KN    1.0390       9   15   14    2    5       18   16    6   10   17
+
+   10  AK    1.0379      15    9   14    2   12       14   10   11    4   15
+   14  SE    1.0311      15    9   14    2   11       15   12    9   18   14
+    4  SG    1.1717      15    9   14    2   11       14   10    9   17    2
+    5  TB    1.0762      15    2   14   11    9        2   15    4   17    5
+   23  SR    1.4658      15    2   14   11    9       16   17   11    2    9
+    2  ES    1.1644      15   11    2   14   13       15    9    8   11   14
+    1  EG    1.1265      15   11    2   14   13       17    8    9   13   15
+   11  EB    1.2101      15   11    2   13   14       14    3   15   12    6
+   13  CA    1.6682      15   11    2   13   14       15   17    1    3   18
+----------------------------------------------------------------------------
+Switch from GEN      5 to     9 at ENV  IPC1 score           -.0997472
+Switch from GEN      9 to    15 at ENV  IPC1 score           -.2136494
+
+     In the above table, the environments are listed in IPC1 order,
+so those at the top and bottom have opposite GxE interaction patterns.
+     Ratio is the yield (or whatever the trait) for the winner within
+each environment (identified in the first column of AMMI1 ranks),
+divided by the yield for the overall winner (which is genotype     5),
+with both yields estimated by the AMMI1 model.  Ratio automatically
+equals 1 for the overall winner.  This ratio assesses the importance
+of narrow adaptations, which are caused by GxE interactions.  When a
+5% or 10% yield increment has agricultural or economic significance,
+a ratio of 1.05 or 1.10 or more indicates that narrow adaptations offer
+substantial opportunities for yield increases, although at the cost of
+subdividing a growing region into two or more mega-environments.
+     M-es have different winners and they are separated by blank lines.
+Ordinarily small m-es are merged into adjacent larger m-es, especially
+when this imposes negligible loss in yield because an adjacent winner
+holds second (or third) rank in the merged environment.  Often slight
+editing of a ranking table, obtained by deleting or moving some blank
+lines, can simplify the m-e scheme considerably.  Editing may achieve
+a favorable tradeoff:  a large gain in practicality, accompanied by a
+negligible loss of yield in several of the environments.
+     At the bottom of the above table, the environment IPC1 scores are
+listed for each switch from one winning genotype to the next.  The
+following tables list IPC1 scores for all genotypes and environments.
+     When crafting a m-e scheme for a given dataset, bear in mind that
+narrow adaptations caused by predictable GxE interactions increase the
+number of usable m-es, whereas unpredictable GxE interactions decrease
+this number.  Often soil and management are predictable from year to
+year, whereas weather is unpredictable.
+
+
+AMMISOFT for ESW8:  Ranked Means and IPC1 Scores
+
+------------------------------------------------------------------
+ GEN   Code          Mean        |  GEN   Code      IPC1 Score
+------------------------------------------------------------------
+    5  KAZ2             5.01200  |     5  KAZ2           1.2903783
+    9  SERI             4.92800  |     4  KAZ1            .8819537
+    4  KAZ1             4.90800  |     7  GENA            .6260161
+    7  GENA             4.84000  |     9  SERI            .4482496
+    6  RWBB             4.78800  |     6  RWBB            .2444134
+   12  GLEN             4.72000  |     1  PRLV            .2174597
+   14  BJYC             4.71600  |    10  BUPV            .1676687
+    2  CNPR             4.69200  |    18  HDHO            .1306524
+    1  PRLV             4.67600  |    16  RGKB            .0506304
+   15  HAPR             4.66400  |    12  GLEN           -.0118154
+   18  HDHO             4.66000  |    17  VEPV           -.0174164
+   17  VEPV             4.60800  |     8  AGA3           -.2630367
+   16  RGKB             4.59600  |    14  BJYC           -.2632998
+   10  BUPV             4.52400  |     2  CNPR           -.3440777
+   11  KETO             4.48800  |     3  BUCG           -.7619314
+    8  AGA3             4.33600  |    13  MONC           -.7797913
+   13  MONC             4.32400  |    15  HAPR           -.7874198
+    3  BUCG             4.28800  |    11  KETO           -.8286336
+------------------------------------------------------------------
+Grand mean              4.65378
+Correlation between GEN  means and IPC1 scores   .7994899
+
+------------------------------------------------------------------
+ ENV   Code          Mean        |  ENV   Code      IPC1 Score
+------------------------------------------------------------------
+    8  MG              10.62778  |    25  MM             1.1212228
+   14  SE               8.02222  |     8  MG              .8221174
+    1  EG               7.93889  |    21  TC              .7348512
+    9  MS               7.37222  |    18  SC              .4797821
+   11  EB               6.69444  |    12  SJ              .4622071
+    5  TB               5.95000  |    15  SS              .3509297
+   10  AK               5.88889  |     7  IL              .2843738
+   12  SJ               5.81111  |    22  PA              .2550808
+    2  ES               5.67778  |     6  BJ              .2267380
+   25  MM               5.38889  |    16  ID              .1806801
+   15  SS               5.35556  |     9  MS              .0386325
+   16  ID               4.65556  |    19  NB              .0254108
+   18  SC               4.57222  |    24  AL             -.0354654
+   24  AL               3.93333  |    17  JM             -.1405806
+   20  PI               3.85556  |    20  PI             -.1535354
+   17  JM               3.80556  |     3  KN             -.2052936
+    7  IL               3.27778  |    10  AK             -.2748949
+    6  BJ               3.03889  |    14  SE             -.2874761
+   13  CA               2.83333  |     4  SG             -.2876124
+   22  PA               2.60000  |     5  TB             -.3808927
+   21  TC               2.51111  |    23  SR             -.3844421
+    3  KN               2.18333  |     2  ES             -.5853798
+   19  NB               1.77778  |     1  EG             -.6235945
+    4  SG               1.46667  |    11  EB             -.7790979
+   23  SR               1.10556  |    13  CA             -.8437607
+------------------------------------------------------------------
+Grand mean              4.65378
+Correlation between ENV  means and IPC1 scores   .0788626
+
+     The above ranked lists should be inspected carefully to determine
+whether they have a plausible biological or ecological interpretation.
+If genotype means and IPC1 scores have a small correlation, then these
+means and scores call for different biological explanations; otherwise,
+if a large correlation, then the same explanation.  The same principles
+apply to ecological interpretation of environment means and IPC1 scores.
+     Genotype IPC1 scores and environment IPC1 scores require a coherent
+interpretation, such as drought tolerance for genotypes and rainfall for
+environments.  If either genotypes or environments are better known than
+the other, begin with whichever is more familiar.  Start by contrasting
+the top several genotypes (or environments) with the bottom several ones
+to suggest a biological (or ecological) interpretation, and then inspect
+the entire list to confirm a systematic trend and clear interpretation.
+
+
+AMMISOFT for ESW8:  Computer-readable AMMI Parameters
+   18   25    1    7             4.65378
+    1  PRLV             4.67600            .2174597           -.0853219            .1441574           -.0275936           -.3310389           -.9490407            .2902223
+    2  CNPR             4.69200           -.3440777            .1841344           -.8040473            .2122726           -.1884918            .0354119            .0674251
+    3  BUCG             4.28800           -.7619314           -.0324111           -.1303675            .3260978           -.3413959           -.5470422           -.0043454
+    4  KAZ1             4.90800            .8819537           -.1214441            .2065496           1.0950518            .0288798           -.1932877           -.4074611
+    5  KAZ2             5.01200           1.2903783            .5112877            .1951267           -.0556404           -.3039859            .0879545           -.1873527
+    6  RWBB             4.78800            .2444134           -.5684483            .3926750           -.5059498            .7729343           -.1877422            .3773994
+    7  GENA             4.84000            .6260161            .2533892           -.6500622            .1986105           -.0796095            .8273453            .4135394
+    8  AGA3             4.33600           -.2630367            .8313018           -.8089615           -.6476989            .6574770           -.1484841           -.4861855
+    9  SERI             4.92800            .4482496           -.0916967            .2106099           -.8481254           -.0639943            .0129730           -.5365955
+   10  BUPV             4.52400            .1676687           -.8145641           -.5318651           -.0814924            .2488597           -.4921747            .3376235
+   11  KETO             4.48800           -.8286336           -.6369192           -.3994288            .0970405           -.4832584            .4918705            .0684019
+   12  GLEN             4.72000           -.0118154            .0147295            .3892021            .4153054            .4890264            .1231053            .3371581
+   13  MONC             4.32400           -.7797913           -.0633858            .8997486           -.3150152            .0612133            .3726235           -.0961181
+   14  BJYC             4.71600           -.2632998           -.3090787           -.1978698            .4430544            .6558854            .0532935           -.5807979
+   15  HAPR             4.66400           -.7874198            .9265622            .5956315            .4683937            .0436897           -.0510956           -.0824845
+   16  RGKB             4.59600            .0506304           -.6325716            .1712912           -.2965782           -.7882207            .2428016           -.5993373
+   17  VEPV             4.60800           -.0174164            .6649198            .0428932           -.3977417           -.5678021           -.2933864            .5489339
+   18  HDHO             4.66000            .1306524           -.0304831            .2747170           -.0799911            .1898321            .6148744            .5399743
+    1  EG               7.93889           -.6235945            .8032537            .0636960          -1.1781918           -.2056976            .2039155            .2962903
+    2  ES               5.67778           -.5853798            .2532146            .0986211           -.1479995            .1786506            .3320871           -.6216966
+    3  KN               2.18333           -.2052936           -.2344538           -.0119509           -.2038588           -.0767476           -.0471074            .2813046
+    4  SG               1.46667           -.2876124           -.2083165           -.0138154           -.1686208            .1757914           -.1561360            .0650307
+    5  TB               5.95000           -.3808927            .6749822           -.2651174            .7566311           -.9592300           -.1638889           -.2425546
+    6  BJ               3.03889            .2267380           -.4466882           -.2900540           -.1862593           -.2464988            .4166906           -.0865462
+    7  IL               3.27778            .2843738           -.7033679            .6410403           -.4775432            .2296406           -.5458415           -.3898965
+    8  MG              10.62778            .8221174            .6605654           1.1461536            .0991464            .2437447            .2966043           -.2081891
+    9  MS               7.37222            .0386325            .2238713           -.0992873            .1387396            .2456908            .1835772           -.2411368
+   10  AK               5.88889           -.2748949           -.2378037           -.3827654            .5010051            .4234726           -.1126014            .0809897
+   11  EB               6.69444           -.7790979           -.0108132            .1109745            .4630356            .7182197           -.6928495           -.2619037
+   12  SJ               5.81111            .4622071           -.0240380           -.0122493            .3201647            .4715786            .3965508           1.0405827
+   13  CA               2.83333           -.8437607           -.0094649            .2240997           -.0603799           -.2689040           -.4794742            .5153585
+   14  SE               8.02222           -.2874761            .2725604            .1479170            .2987583            .0639960            .4652473           -.2093775
+   15  SS               5.35556            .3509297            .0529918            .1775949           -.0022313           -.4070683           -.1720940            .0646989
+   16  ID               4.65556            .1806801           -.1326835           -.2320415            .0447675            .2036842            .5971568           -.1762177
+   17  JM               3.80556           -.1405806           -.6894218            .9050686            .4023030           -.5123786            .3040451            .1797195
+   18  SC               4.57222            .4797821            .4659419           -.5737974            .3204907            .2138970            .0706706            .0093811
+   19  NB               1.77778            .0254108           -.3688330           -.2086609           -.0229053           -.2190285           -.0270160            .1660170
+   20  PI               3.85556           -.1535354            .0226873           -.3763553           -.4583263            .5555944            .0848020           -.0322764
+   21  TC               2.51111            .7348512           -.6027912           -.5793147           -.3357778           -.3873649            .0025246           -.4265305
+   22  PA               2.60000            .2550808           -.2090336           -.1347155            .0690359           -.0828425           -.1616332            .1656221
+   23  SR               1.10556           -.3844421           -.0485280           -.1242973           -.2498804           -.2194050            .1042158           -.0051494
+   24  AL               3.93333           -.0354654           -.1508849           -.1139626            .2381611           -.0650935           -.0453621           -.0664005
+   25  MM               5.38889           1.1212228            .6470537           -.0967806           -.1602647           -.0737013           -.8540835            .1028803

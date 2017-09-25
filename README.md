@@ -8,9 +8,9 @@
 
 - This will overwrite the previous Output\AMMISOFT-installer if it is not moved or copied
 
-1. Download and install INNO: http://www.jrsoftware.org/isdl.php
+1. Download and install Inno Setup: http://www.jrsoftware.org/isdl.php
 
-2. Open ammi.iss in INNO
+2. Open ammi.iss in Inno Setup
 
 3. Compile or build
 
